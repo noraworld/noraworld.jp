@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+a {
+  color: #7fbdff;
+}
+a:hover {
+  color: #ffa500;
+}
+
+
+#type-wrap, #copyright, #not-found {
+  text-align: center;
+}
+#wrapper {
+  font-family: 'Open Sans', 'Apple TP', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+#header {
+  width: 1000px;
+  margin: 50px auto;
+  overflow: auto;
+  font-size: 18px;
+}
+#sitelogo, #sitename {
+  float: left;
+  margin-left: 10px;
+  display: block;
+}
+#sitename {
+  font-weight: bold;
+}
+#navigation {
+  float: right;
+  list-style: none;
+}
+#navigation li {
+  float: left;
+  margin: 0 15px;
+}
+#navigation a {
+  color: #000000;
+}
+#navigation a:hover {
+  color: #ffa500;
+}
+
+#container {
+  width: 1000px;
+  margin: 0 auto;
+}
+#type-wrap {
+  width: 1000px;
+  height: 300px;
+  display: table-cell;
+  vertical-align: middle;
+}
+#typed {
+  font-family: 'Josefin Slab';
+  font-size: 50px;
+  color: #666666;
+}
+
+#footer {
+  position: relative;
+  margin: 8rem 0 0 0;
+  padding: 1rem 15px;
+  font-size: 1px;
+  color: #3f2e2e;
+}
+#copyright {
+  color: #3f2e2e;
+}
+#copyright a {
+  font-weight: bold;
+  color: #3f2e2e;
+}
+#copyright a:hover {
+  text-decoration: underline;
+}
+
+.clearfix {
+  clear: both;
+  /*display: table;*/
+}

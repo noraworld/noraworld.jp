@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>{{title}}</title>
+
+  <link rel="shortcut icon" href="{{home.icon}}">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:700,400|Josefin+Slab:100italic" />
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <div id="wrapper">
+    <header id="header" class="clearfix">
+      <a id="sitelogo" href="{{home.url}}"><img src="{{home.icon}}" alt="{{home.title}}"></a>
+      <a id="sitename" href="{{home.url}}">{{home.title}}</a>
+
+      <ul id="navigation">
+        <li><a href="{{home.url}}">Home</a></li>
+        <li><a href="{{blog.url}}">Blog</a></li>
+        <li><a href="http://192.168.33.10:3000/about">About</a></li>
+        <li><a href="https://twitter.com/nora20120808" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/noraffyworld" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://github.com/noraworld" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a href="http://qiita.com/noraworld" target="_blank"><i class="fa fa-code"></i></a></li>
+      <ul>
+    </header>
+
+{{! each content here}}
+{{! footer here}}
