@@ -72,9 +72,30 @@ a:hover {
 #container {
   width: 1000px;
   margin: 0 auto;
+  color: #666666;
 }
 #type-wrap, #copyright, #not-found {
   text-align: center;
+}
+.breadcrumb-wrapper {
+  position: relative;
+  display: table;
+  width: 1000px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+.breadcrumb {
+  border-top: #fff0e0 1px solid;
+  border-bottom: #fff0e0 1px solid;
+  font-size: 13px;
+  padding: 0 30px;
+  text-align: left;
+  list-style: none;
+  overflow: auto;
+}
+.breadcrumb li {
+  float: left;
+  margin: 5px;
 }
 .work-title {
   text-align: center;
@@ -111,7 +132,8 @@ a:hover {
   vertical-align: middle;
 }
 #typed {
-  font-family: 'Josefin Slab';
+  font-family: 'Open Sans';
+  font-weight: 1;
   font-size: 50px;
   color: #666666;
 }
