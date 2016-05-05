@@ -43,6 +43,11 @@ app.get('/', function(req, res) {
     title: 'Noraworld',
   });
 });
+app.get('/about', function(req, res) {
+  res.render('about', {
+    title: 'About'
+  });
+});
 app.get('/works/niconicommander', function(req, res) {
   res.render('works/niconicommander', {
     title: 'niconicommander'

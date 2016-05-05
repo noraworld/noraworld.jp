@@ -90,6 +90,12 @@ a:hover {
   padding: 0 30px;
   margin: 20px 0 5px;
 }
+#works {
+  text-align: center;
+}
+#works h1 {
+  margin-bottom: 10px;
+}
 .download {
   padding: 20px 0;
   width: 200px;
