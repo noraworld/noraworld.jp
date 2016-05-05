@@ -1,9 +1,12 @@
-var express = require('express'),
-    app     = express(),
-    logger  = require('morgan'),
-    hbs     = require('express-hbs'),
-    fs      = require('fs'),
-    config  = require('./config');
+var express   = require('express'),
+    app       = express(),
+    logger    = require('morgan'),
+    hbs       = require('express-hbs'),
+    fs        = require('fs'),
+    config    = require('./config'),
+    date      = require('date-utils'),
+    dt        = new Date(),
+    formatted = dt.toFormat('YYYY');
 
 // Settings for express-hbs
 app.engine('hbs', hbs.express4({
@@ -17,6 +20,7 @@ app.use(logger('dev'));
 app.use(express.static(__dirname + '/views'));
 
 // Global Handlebars value
+app.locals.year = formatted;
 app.locals.home = {
   title: 'Noraworld',
   url: config.url,
@@ -26,6 +30,12 @@ app.locals.blog = {
   title: 'Noraworld Blog',
   url: config.url + '/blog',
 };
+app.locals.works = {
+  niconicommander: {
+    title: 'ニコニコマンダー',
+    url: config.url + '/works/niconicommander'
+  }
+}
 
 // Routing
 app.get('/', function(req, res) {
@@ -33,9 +43,9 @@ app.get('/', function(req, res) {
     title: 'Noraworld',
   });
 });
-app.get('/works', function(req, res) {
-  res.render('works', {
-    title: 'Works'
+app.get('/works/niconicommander', function(req, res) {
+  res.render('works/niconicommander', {
+    title: 'niconicommander'
   });
 });
 

@@ -1,3 +1,6 @@
+/******************************
+******** Global styles ********
+******************************/
 * {
   margin: 0;
   padding: 0;
@@ -28,10 +31,9 @@ a:hover {
   color: #ffa500;
 }
 
-
-#type-wrap, #copyright, #not-found {
-  text-align: center;
-}
+/******************************
+************ Header ***********
+******************************/
 #wrapper {
   font-family: 'Open Sans', 'Apple TP', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -64,10 +66,38 @@ a:hover {
   color: #ffa500;
 }
 
+/******************************
+************ General **********
+******************************/
 #container {
   width: 1000px;
   margin: 0 auto;
 }
+#type-wrap, #copyright, #not-found {
+  text-align: center;
+}
+.work-title {
+  text-align: center;
+}
+.subcontainer > :not(h1) {
+  padding: 0 60px;
+}
+.subcontainer ul {
+  list-style: none;
+  padding: 0 75px;
+}
+.subcontainer h1 {
+  padding: 0 30px;
+  margin: 20px 0 5px;
+}
+.download {
+  padding: 20px 0;
+  width: 200px;
+}
+
+/******************************
+************* Index ***********
+******************************/
 #type-wrap {
   width: 1000px;
   height: 300px;
@@ -79,7 +109,16 @@ a:hover {
   font-size: 50px;
   color: #666666;
 }
+.work-image {
+  width: 100px;
+  height: 100px;
+  border: 1px solid skyblue;
+  border-radius: 100%;
+}
 
+/******************************
+************ Footer ***********
+******************************/
 #footer {
   position: relative;
   margin: 8rem 0 0 0;
@@ -98,6 +137,9 @@ a:hover {
   text-decoration: underline;
 }
 
+/******************************
+************ Other ************
+******************************/
 .clearfix {
   clear: both;
   /*display: table;*/
