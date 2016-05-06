@@ -1,10 +1,10 @@
 $(function() {
   $('#typed').typed({
-    strings: ['Great discussions are happening here.'],
-    typeSpeed: 40,
+    strings: ['> welcome to my webpage^1000<br>> ^1000i love coding'],
+    typeSpeed: 30,
     startDelay: 1500,
     loop: false,
-    cursorChar: '',
+    cursorChar: '_',
     contentType: 'html',
   });
 });

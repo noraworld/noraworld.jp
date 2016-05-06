@@ -30,6 +30,10 @@ app.locals.blog = {
   title: 'Noraworld Blog',
   url: config.url + '/blog',
 };
+app.locals.about = {
+  title: 'About',
+  url: config.url + '/about',
+}
 app.locals.works = {
   niconicommander: {
     title: 'ニコニコマンダー',

@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+header {
+  background-color: #333333;
+  overflow: auto;
+}
+#header {
+  width: 1000px;
+  margin: 0 auto;
+  font-family: 'Open Sans';
+}
+#header a {
+  color: #8a9bd8;
+  font-size: 20px;
+}
+#header ul {
+  list-style: none;
+  float: right;
+}
+#header ul li {
+  float: left;
+  padding: 20px 20px;
+}
+#homeicon {
+  float: left !important;
+}
+
+#container {
+  font-family: 'Menlo', 'Source Code Pro';
+  color: #32cd32;
+  font-size: 80px;
+  font-weight: 100;
+}
+
+#hoge {
+  height: 800px;
+  background: radial-gradient(#8ca6db, #b993d6);
+}
+.type-wrap {
+  height: 500px;
+  margin: 0 50px;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0 0 10px 10px;
+}
+.tool-bar {
+  height: 25px;
+  margin: 0 50px;
+  background-color: #c6c6c6;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  font-size: 15px;
+  font-family: 'ヒラギノ角ゴ'
+}
+.tool-bar p {
+  display: inline;
+}
+.tool-bar p:nth-child(1) {
+  position: absolute;
+  left: 60px;
+  color: red;
+}
+.tool-bar p:nth-child(2) {
+  position: absolute;
+  left: 80px;
+  color: orange;
+}
+.tool-bar p:nth-child(3) {
+  position: absolute;
+  left: 100px;
+  color: green;
+}
+.tool-bar p:nth-child(4) {
+  color: #333333;
+}
+
+.dummy {
+  height: 30px;
+}
+.clearfix {
+  clear: both;
+}
