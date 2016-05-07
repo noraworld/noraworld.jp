@@ -3,6 +3,9 @@
   padding: 0;
   text-decoration: none;
 }
+body {
+  /*background-color: #333333;*/
+}
 
 header {
   background-color: #333333;
@@ -30,15 +33,11 @@ header {
 }
 
 #container {
-  font-family: 'Menlo', 'Source Code Pro';
-  color: #32cd32;
-  font-size: 80px;
-  font-weight: 100;
 }
 
-#hoge {
-  height: 800px;
+#page-1 {
   background: radial-gradient(#8ca6db, #b993d6);
+  min-height: 100vh;
 }
 .type-wrap {
   height: 500px;
@@ -46,38 +45,87 @@ header {
   padding: 50px;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 0 0 10px 10px;
+
+  font-family: 'Menlo', 'Source Code Pro';
+  font-size: 80px;
+  color: #32cd32;
+  font-weight: 100;
 }
-.tool-bar {
+.title-bar {
   height: 25px;
   margin: 0 50px;
-  background-color: #c6c6c6;
+  background: linear-gradient(#e5e5e5, #c9c9c9);
   text-align: center;
   border-radius: 10px 10px 0 0;
   font-size: 15px;
   font-family: 'ヒラギノ角ゴ'
 }
-.tool-bar p {
+.title-bar p {
   display: inline;
 }
-.tool-bar p:nth-child(1) {
+.title-bar p:nth-child(1) {
   position: absolute;
   left: 60px;
   color: red;
 }
-.tool-bar p:nth-child(2) {
+.title-bar p:nth-child(2) {
   position: absolute;
   left: 80px;
   color: orange;
 }
-.tool-bar p:nth-child(3) {
+.title-bar p:nth-child(3) {
   position: absolute;
   left: 100px;
   color: green;
 }
-.tool-bar p:nth-child(4) {
+.title-bar p:nth-child(4) {
   color: #333333;
 }
+#page-2 {
+  background: radial-gradient(#f46b45, #eea849);
+}
+#works {
+  height: 600px;
+  margin: 0 50px;
+  background-color: #fcfcfc;
+  border-radius: 0 0 10px 10px;
+}
+#finder-title-bar {
+  height: 70px;
+  border-bottom: #969696 2px solid;
+}
+.folder {
+  display: inline-block;
+  text-align: center;
+  padding: 30px 10px;
+  margin: 50px 0 0 50px;
+}
+.folder:hover {
+  background-color: #dbdbdb;
+  border-radius: 10px;
+}
+#works a {
+  color: #333333;
+}
+#works a:hover {
+  color: #ffffff;
+}
 
+.work-title {
+  background: linear-gradient(135deg, rgba(74, 86, 157, 0.96), rgba(220, 36, 36, 0.96)),
+  url(/images/niconico_background.png);
+  background-size: cover;
+  padding: 100px;
+  text-align: center;
+}
+
+#notfound-typed a {
+  color: #32cd32;
+}
+#notfound-typed a:hover {
+  padding-bottom: 5px;
+  border-bottom: #32cd32 2px solid;
+}
 .dummy {
   height: 30px;
 }

@@ -60,7 +60,9 @@ app.get('/works/niconicommander', function(req, res) {
 
 // Error page
 app.use(function(req, res) {
-  res.status(404).render('404');
+  res.status(404).render('404', {
+    title: '404 Not Found'
+  });
 });
 
 // views/partials 内の hbs ファイルをまとめてインクルードできる
