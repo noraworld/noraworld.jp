@@ -1,3 +1,4 @@
+/*Global*/
 * {
   margin: 0;
   padding: 0;
@@ -6,19 +7,23 @@
 body {
   /*background-color: #333333;*/
 }
-
 header {
   background-color: #333333;
   overflow: auto;
 }
+
+/*Header*/
 #header {
   width: 1000px;
   margin: 0 auto;
   font-family: 'Open Sans';
 }
 #header a {
-  color: #8a9bd8;
+  color: #c0d1d1;
   font-size: 20px;
+}
+#header a i {
+  font-size: 25px;
 }
 #header ul {
   list-style: none;
@@ -32,9 +37,12 @@ header {
   float: left !important;
 }
 
-#container {
+.subcontainer {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
+/*Index*/
 #page-1 {
   background: radial-gradient(#8ca6db, #b993d6);
   min-height: 100vh;
@@ -94,31 +102,119 @@ header {
   height: 70px;
   border-bottom: #969696 2px solid;
 }
+.folder-wrap {
+  display: inline-block;
+  margin: 50px 0 0 50px;
+}
 .folder {
   display: inline-block;
   text-align: center;
   padding: 30px 10px;
-  margin: 50px 0 0 50px;
 }
 .folder:hover {
   background-color: #dbdbdb;
   border-radius: 10px;
 }
 #works a {
+  display: inline-block;
   color: #333333;
 }
 #works a:hover {
   color: #ffffff;
 }
 
+/*niconicommander*/
 .work-title {
   background: linear-gradient(135deg, rgba(74, 86, 157, 0.96), rgba(220, 36, 36, 0.96)),
   url(/images/niconico_background.png);
   background-size: cover;
   padding: 100px;
   text-align: center;
+  color: skyblue;
+}
+.work-title h1, .work-title p {
+  margin: 10px 0;
+}
+.work-title p {
+  margin: 10px 0 30px;
+}
+.download {
+  width: 250px;
+}
+.subcontainer h1 {
+  font-family: 'Menlo', 'Source Code Pro';
+  color: #32cd32;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+  padding: 5px 15px;
+  margin: 30px 0 10px;
+}
+.subcontainer h1:before {
+  content: '> ';
+}
+.subcontainer h1:after {
+  content: '_';
+}
+.subcontainer :not(h1) {
+  padding: 0 20px;
+}
+.subcontainer li {
+  list-style: none;
+}
+.detail-icon {
+  max-width: 1000px;
+  margin: 30px auto;
+  text-align: center;
+}
+.balloon-wrap {
+  display: inline-block;
+  text-align: center;
+}
+.balloon {
+  opacity: 0;
+  background-color: #333333;
+  color: #dbdbdb;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+.balloon-icon {
+  display: inline-block;
+}
+.balloon-icon .fa-download {
+  font-size: 50px;
+  color: orange;
+}
+.balloon-icon .fa-github {
+  font-size: 60px;
+  color: #000000;
+}
+.balloon-icon .fa-twitter {
+  font-size: 50px;
+  color: skyblue;
 }
 
+/*Footer*/
+#footer {
+  position: relative;
+  padding: 15px 0;
+  font-size: 1px;
+  font-family: 'Open Sans';
+  color: #c0d1d1;
+  background-color: #333333;
+}
+#copyright {
+  text-align: center;
+}
+#copyright a {
+  font-weight: bold;
+  color: #c0d1d1;
+}
+#copyright a:hover {
+  text-decoration: underline;
+}
+
+/*404 Not Found*/
 #notfound-typed a {
   color: #32cd32;
 }
@@ -126,6 +222,8 @@ header {
   padding-bottom: 5px;
   border-bottom: #32cd32 2px solid;
 }
+
+/*Additional*/
 .dummy {
   height: 30px;
 }

@@ -15,4 +15,15 @@ $(function() {
     cursorChar: '_',
     contentType: 'html',
   });
+
+  $('.balloon-icon').hover(function() {
+    $(this).parent().children('.balloon').animate({
+      'opacity': 1
+    }, 100);
+  }, function() {
+    $(this).parent().children('.balloon').animate({
+      'opacity': 0
+    }, 100);
+  });
+
 });
