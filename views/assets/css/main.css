@@ -177,13 +177,6 @@ p {
   width: 440px;
   display: inline-block;
 }
-#instagram-widget {
-  width: 440px;
-  height: 700px;
-  overflow: scroll;
-  display: inline-block;
-  padding: 0;
-}
 
 /*niconicommander*/
 .work-title {
