@@ -22,7 +22,7 @@ app.use(express.static(__dirname + '/views'));
 // Global Handlebars value
 app.locals.year = formatted;
 app.locals.home = {
-  title: 'Noraworld',
+  title: 'noraworld',
   url: config.url,
   icon: '../images/favicon.png'
 };

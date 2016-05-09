@@ -9,7 +9,10 @@ body {
 }
 header {
   background-color: #333333;
-  overflow: auto;
+}
+p {
+  font-family: 'Open Sans', 'Apple TP', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 28px;
 }
 
 /*Header*/
@@ -40,6 +43,7 @@ header {
 .subcontainer {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 20px 0;
 }
 
 /*Index*/
@@ -121,6 +125,64 @@ header {
 }
 #works a:hover {
   color: #ffffff;
+}
+
+/*About*/
+.pos-left {
+  float: left;
+}
+.pos-right {
+  float: right;
+}
+.subcontainer:nth-child(odd) .pos-left {
+  width: 300px;
+  height: 400px;
+  position: relative;
+}
+.subcontainer:nth-child(even) .pos-left {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  background: linear-gradient(135deg, #8fd6ea, #99adfc);
+  border-radius: 8px;
+}
+.subcontainer:nth-child(odd) .pos-right {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  background: linear-gradient(135deg, #ffdda0, #ffbca0);
+  border-radius: 8px;
+}
+.subcontainer:nth-child(even) .pos-right {
+  width: 300px;
+  height: 400px;
+  position: relative;
+}
+.pos-left img, .pos-right img {
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+#about-noraworld p, #about-me p {
+  text-align: justify;
+  color: #3a4145;
+}
+#twitter-widget {
+  width: 440px;
+  display: inline-block;
+}
+#instagram-widget {
+  width: 440px;
+  height: 700px;
+  overflow: scroll;
+  display: inline-block;
+  padding: 0;
 }
 
 /*niconicommander*/
@@ -229,4 +291,5 @@ header {
 }
 .clearfix {
   clear: both;
+  overflow: auto;
 }
