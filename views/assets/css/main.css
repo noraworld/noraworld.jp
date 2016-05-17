@@ -5,7 +5,7 @@
   text-decoration: none;
 }
 body {
-  /*background-color: #333333;*/
+  background-color: #333333;
 }
 header {
   background-color: #333333;
@@ -40,6 +40,10 @@ p {
   float: left !important;
 }
 
+/*General*/
+#container {
+  background: #ffffff;
+}
 .subcontainer {
   max-width: 1000px;
   margin: 0 auto;
@@ -150,7 +154,7 @@ p {
   width: 600px;
   height: 400px;
   position: relative;
-  background: linear-gradient(135deg, #ffdda0, #ffbca0);
+  background: linear-gradient(135deg, #ff9f72, #f97090);
   border-radius: 8px;
 }
 .subcontainer:nth-child(even) .pos-right {
@@ -169,13 +173,21 @@ p {
   left: 0;
   margin: auto;
 }
+#about-noraworld, #about-me {
+  background: #ffffff;
+}
 #about-noraworld p, #about-me p {
   text-align: justify;
   color: #3a4145;
 }
 #twitter-widget {
-  width: 440px;
+  width: 400px;
   display: inline-block;
+}
+#twitter-widget {
+  border: #e2e9ed 1px solid;
+  border-radius: 4px;
+  padding: 10px;
 }
 
 /*niconicommander*/
@@ -218,7 +230,8 @@ p {
 }
 .detail-icon {
   max-width: 1000px;
-  margin: 30px auto;
+  margin: 0 auto;
+  padding: 30px 0;
   text-align: center;
 }
 .balloon-wrap {
@@ -253,7 +266,7 @@ p {
 #footer {
   position: relative;
   padding: 15px 0;
-  font-size: 1px;
+  font-size: 10px;
   font-family: 'Open Sans';
   color: #c0d1d1;
   background-color: #333333;
