@@ -251,15 +251,15 @@ p {
 .balloon-icon {
   display: inline-block;
 }
-.balloon-icon .fa-download {
+.balloon-icon .icon-download {
   font-size: 50px;
   color: orange;
 }
-.balloon-icon .fa-github {
-  font-size: 60px;
+.balloon-icon .icon-github {
+  font-size: 50px;
   color: #000000;
 }
-.balloon-icon .fa-twitter {
+.balloon-icon .icon-twitter {
   font-size: 50px;
   color: skyblue;
 }
