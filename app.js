@@ -28,7 +28,7 @@ app.locals.home = {
 };
 app.locals.blog = {
   title: 'Noraworld Blog',
-  url: config.url + '/blog',
+  url: 'http://blog.noraworld.jp',
 };
 app.locals.about = {
   title: 'About',
