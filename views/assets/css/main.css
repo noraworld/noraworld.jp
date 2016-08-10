@@ -146,65 +146,6 @@ p {
   color: #ffffff;
 }
 
-/*About*/
-.pos-left {
-  float: left;
-}
-.pos-right {
-  float: right;
-}
-.subcontainer:nth-child(odd) .pos-left {
-  width: 300px;
-  height: 400px;
-  position: relative;
-}
-.subcontainer:nth-child(even) .pos-left {
-  width: 600px;
-  height: 400px;
-  position: relative;
-  background: linear-gradient(135deg, #8fd6ea, #99adfc);
-  border-radius: 8px;
-}
-.subcontainer:nth-child(odd) .pos-right {
-  width: 600px;
-  height: 400px;
-  position: relative;
-  background: linear-gradient(135deg, #ff9f72, #f97090);
-  border-radius: 8px;
-}
-.subcontainer:nth-child(even) .pos-right {
-  width: 300px;
-  height: 400px;
-  position: relative;
-}
-.pos-left img, .pos-right img {
-  width: 180px;
-  height: 180px;
-  border-radius: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-}
-#about-noraworld, #about-me {
-  background: #ffffff;
-}
-#about-noraworld p, #about-me p {
-  text-align: justify;
-  color: #3a4145;
-}
-#twitter-widget {
-  width: 400px;
-  display: inline-block;
-}
-#twitter-widget {
-  border: #e2e9ed 1px solid;
-  border-radius: 4px;
-  padding: 10px;
-}
-
 /*niconicommander*/
 .work-title {
   background: linear-gradient(135deg, rgba(74, 86, 157, 0.96), rgba(220, 36, 36, 0.96)),

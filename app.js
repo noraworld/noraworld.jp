@@ -26,14 +26,14 @@ app.locals.home = {
   url: config.url,
   icon: '../images/favicon.png'
 };
+app.locals.diary = {
+  title: 'Noraworld Diary',
+  url: 'https://diary.noraworld.jp',
+};
 app.locals.blog = {
   title: 'Noraworld Blog',
-  url: 'http://blog.noraworld.jp',
+  url: 'https://blog.noraworld.jp',
 };
-app.locals.about = {
-  title: 'About',
-  url: config.url + '/about',
-}
 app.locals.works = {
   niconicommander: {
     title: 'ニコニコマンダー',
@@ -45,11 +45,6 @@ app.locals.works = {
 app.get('/', function(req, res) {
   res.render('index', {
     title: 'Noraworld',
-  });
-});
-app.get('/about', function(req, res) {
-  res.render('about', {
-    title: 'About'
   });
 });
 app.get('/works/niconicommander', function(req, res) {
