@@ -4,4 +4,4 @@ My personal webpage. If you are interested in even just a little bit, please vis
 [noraworld.jp](https://noraworld.jp)
 
 ## Screenshot
-![screenshot v0.1](https://github.com/noraworld/noraworld.jp/blob/ca55b64befa857e2dae01c6331c2914c3b6a7aa0/screenshot.png)
+No screenshot yet. Would you like to see previous version? - See [Latest release](https://github.com/noraworld/noraworld.jp/releases/latest)
