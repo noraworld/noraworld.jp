@@ -4,13 +4,24 @@
 }
 a {
   text-decoration: none;
-  border-bottom: 1px solid;
+}
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, -10px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+  }
 }
 
 #canvas {
   width: 100%;
   height: 100vh;
   background-color: rgb(16, 27, 51);
+  position: relative;
 }
 noscript div {
   color: #ffffff;
@@ -21,8 +32,21 @@ noscript div {
   justify-content: center;
   align-items: center;
 }
+.scroll-down {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  font-size: 60px;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: rgba(255, 255, 255, .8);
+  z-index: 100;
+  animation: bounce 2s infinite;
+}
 
-.profile, .works, .activities {
+#profile, #works, #activities {
   width: 100%;
   height: 700px;
   font-family: 'Josefin Slab';
@@ -30,10 +54,10 @@ noscript div {
   font-weight: 100;
   color: #eeeeee;
 }
-.profile, .activities {
+#profile, #activities {
   background-color: #fff6fc;
 }
-.works {
+#works {
   /*background-color: #f6f9ff;*/
   background-color: #ffe6f7;
 }
@@ -70,6 +94,9 @@ noscript div {
 }
 .contents-box .contents-wrapper .content .matter {
   color: rgb(128, 128, 128);
+}
+.contents-box .contents-wrapper .content a.matter {
+  border-bottom: 1px solid;
 }
 .contents-box .contents-wrapper .content a.matter:hover {
   color: rgb(64, 64, 64);
