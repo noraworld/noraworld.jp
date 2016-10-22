@@ -2,8 +2,99 @@
   padding: 0;
   margin: 0;
 }
+a {
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
 
 #canvas {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
+  background-color: rgb(16, 27, 51);
+}
+noscript div {
+  color: #ffffff;
+  font-family: 'BlinkMacSystemFont';
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile, .works, .activities {
+  width: 100%;
+  height: 700px;
+  font-family: 'Josefin Slab';
+  font-style: italic;
+  font-weight: 100;
+  color: #eeeeee;
+}
+.profile, .activities {
+  background-color: #fff6fc;
+}
+.works {
+  /*background-color: #f6f9ff;*/
+  background-color: #ffe6f7;
+}
+
+.title {
+  font-size: 80px;
+}
+.contents-box {
+  font-size: 40px;
+}
+
+.title {
+  width: 45%;
+  height: 100%;
+}
+.contents-box {
+  width: 55%;
+  height: 100%;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(216, 113, 153);
+}
+.contents-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contents-box .contents-wrapper .content {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.contents-box .contents-wrapper .content .matter {
+  color: rgb(128, 128, 128);
+}
+.contents-box .contents-wrapper .content a.matter:hover {
+  color: rgb(64, 64, 64);
+}
+.matter-title {
+  float: left;
+  display: inline-block;
+  text-align: right;
+  width: 200px;
+  padding-right: 30px;
+}
+.matter-content {
+  float: right;
+  display: inline-block;
+  text-align: left;
+  width: 350px;
+}
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix {
+  clear: both;
+  overflow: auto;
 }

@@ -1,7 +1,7 @@
 var bubbles = [];
 
 function setup() {
-  var canvas = createCanvas(windowWidth, windowHeight*0.9);
+  var canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent('canvas');
   background(16, 27, 51);
   for (var i = 0; i < 100; i++) {
@@ -48,6 +48,6 @@ function Bubble(x, y) {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight*0.9);
+  resizeCanvas(windowWidth, windowHeight);
   background(16, 27, 51);
 }
