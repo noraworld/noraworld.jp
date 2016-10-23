@@ -1,5 +1,5 @@
-# noraworld.jp
-My personal webpage. If you are interested in even just a little bit, please visit and see my portfolio. I am looking forward to you comming:smile:
+# My portfolio
+Just my portfolio. If you are interested in even just a little bit, please visit and see my productions. I am looking forward to you comming:smile:
 
 [noraworld.jp](https://noraworld.jp)
 
