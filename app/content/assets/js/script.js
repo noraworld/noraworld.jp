@@ -11,7 +11,7 @@
   };
 
   // if a script is enabled, hide content to show with animations
-  if (document.body.scrollTop < 550) {
+  if (document.body.scrollTop < 280) {
     document.querySelector('#profile .contents-box .contents-wrapper').style.opacity = 0;
     scrollAnimationFlag['profile'] = true;
   }
@@ -32,7 +32,7 @@
 
   // work with each scroll action
   window.addEventListener('scroll', () => {
-    animateSlider(document.querySelector(   '#profile .contents-box .contents-wrapper'),  550,    'profile',  '100%');
+    animateSlider(document.querySelector(   '#profile .contents-box .contents-wrapper'),  280,    'profile',  '100%');
     animateSlider(document.querySelector(     '#works .contents-box .contents-wrapper'), 1156,      'works', '-100%');
     animateSlider(document.querySelector('#activities .contents-box .contents-wrapper'), 1740, 'activities',  '100%');
   });
@@ -44,7 +44,7 @@
         opacity: [0, 1],
         transform: ['translate(' + direction + ', 0)', 'translate(0, 0)'],
       }, {
-        duration: 500,
+        duration: 250,
         iterations: 1,
         easing: 'ease-in-out',
       }).onfinish = () => {

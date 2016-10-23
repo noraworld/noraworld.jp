@@ -3,7 +3,7 @@
   margin: 0;
 }
 a {
-  text-decoration: none;
+  /*text-decoration: none;*/
 }
 @-webkit-keyframes bounce {
   0% {
@@ -43,6 +43,7 @@ noscript div {
   margin: auto;
   color: rgba(255, 255, 255, .8);
   z-index: 100;
+  text-decoration: none;
   animation: bounce 2s infinite;
 }
 
@@ -97,6 +98,7 @@ noscript div {
 }
 .contents-box .contents-wrapper .content a.matter {
   border-bottom: 1px solid;
+  text-decoration: none;
 }
 .contents-box .contents-wrapper .content a.matter:hover {
   color: rgb(64, 64, 64);
@@ -113,6 +115,24 @@ noscript div {
   display: inline-block;
   text-align: left;
   width: 350px;
+}
+
+#footer {
+  font-family: 'Open Sans';
+  font-size: 10px;
+  color: #3f2e2e;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #fff6fc;
+  text-align: center;
+}
+#footer a {
+  text-decoration: none;
+  color: #3f2e2e;
+  font-weight: bold;
+}
+#footer a:hover {
+  border-bottom: #3f2e2e 1px solid;
 }
 
 .left {
