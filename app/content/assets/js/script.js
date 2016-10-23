@@ -24,7 +24,7 @@
     scrollAnimationFlag['activities'] = true;
   }
 
-  // click down arrow to scroll down to profile content
+  // click a down arrow to scroll down to profile content
   document.querySelector('.scroll-down').addEventListener('click', (event) => {
     event.preventDefault();
     smoothScroll.animateScroll(document.querySelector('#profile'));

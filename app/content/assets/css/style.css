@@ -2,9 +2,6 @@
   padding: 0;
   margin: 0;
 }
-a {
-  /*text-decoration: none;*/
-}
 @-webkit-keyframes bounce {
   0% {
     -webkit-transform: translate(0, 0);
