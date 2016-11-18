@@ -237,4 +237,26 @@ noscript div {
   }
 }
 
-/* layout breaks from 319px, but do not care */
+/* iPad with portrait orientation */
+/* Refer to https://gist.github.com/pburtchaell/e702f441ba9b3f76f587 */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+  #canvas {
+    height: 1024px;
+  }
+}
+
+/* iPad with landscape orientation. */
+/* Refer to https://gist.github.com/pburtchaell/e702f441ba9b3f76f587 */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+  #canvas {
+    height: 768px;
+  }
+}
+
+/* iPhone 5 */
+/* Refer to https://gist.github.com/pburtchaell/e702f441ba9b3f76f587 */
+@media screen and (device-aspect-ratio: 40/71) {
+  #canvas {
+    height: 500px;
+  }
+}

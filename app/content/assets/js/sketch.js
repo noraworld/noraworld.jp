@@ -1,3 +1,8 @@
+var isSmartphone = false;
+if (navigator.userAgent.match(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/)) {
+  isSmartphone = true;
+}
+
 var setup = () => {
   var canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent('canvas');
@@ -11,6 +16,8 @@ var draw = () => {
 }
 
 var windowResized = () => {
-  resizeCanvas(windowWidth, windowHeight);
+  if (!isSmartphone) {
+    resizeCanvas(windowWidth, windowHeight);
+  }
   background(16, 27, 51);
 }
