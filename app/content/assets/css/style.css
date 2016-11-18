@@ -78,6 +78,7 @@ noscript div {
 .contents-box {
   width: 55%;
   height: 100%;
+  overflow-x: hidden;
 }
 .title {
   display: flex;
