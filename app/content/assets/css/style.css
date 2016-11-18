@@ -2,6 +2,10 @@
   padding: 0;
   margin: 0;
 }
+html {
+  font-size: 62.5%;
+}
+
 @-webkit-keyframes bounce {
   0% {
     -webkit-transform: translate(0, 0);
@@ -33,7 +37,7 @@ noscript div {
   position: absolute;
   width: 60px;
   height: 60px;
-  font-size: 60px;
+  font-size: 6rem;
   bottom: 30px;
   left: 0;
   right: 0;
@@ -61,10 +65,10 @@ noscript div {
 }
 
 .title {
-  font-size: 80px;
+  font-size: 8rem;
 }
 .contents-box {
-  font-size: 40px;
+  font-size: 4rem;
 }
 
 .title {
@@ -116,7 +120,7 @@ noscript div {
 
 #footer {
   font-family: 'Open Sans';
-  font-size: 10px;
+  font-size: 1rem;
   color: #3f2e2e;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -142,3 +146,94 @@ noscript div {
   clear: both;
   overflow: auto;
 }
+
+/* layout breaks from 1163px */
+@media only screen and (max-width: 1165px) {
+  html {
+    font-size: 55%;
+  }
+
+  .matter-title {
+    width: 170px;
+  }
+  .matter-content {
+    width: 290px;
+  }
+}
+
+/* layout breaks from 1054px */
+@media only screen and (max-width: 1055px) {
+  html {
+    font-size: 50%;
+  }
+
+  .matter-title {
+    width: 150px;
+    padding-right: 20px;
+  }
+  .matter-content {
+    width: 250px;
+  }
+}
+
+/* layout breaks from 799px */
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 45%;
+  }
+
+  #profile, #works, #activities {
+    height: auto;
+    overflow: visible;
+  }
+  .title {
+    width: 100%;
+    height: 80vw;
+  }
+  .contents-box {
+    width: 100%;
+    height: 80vw;
+  }
+}
+
+/* layout breaks from 439px */
+@media only screen and (max-width: 440px) {
+  html {
+    font-size: 40%;
+  }
+
+  .matter-title {
+    width: 110px;
+  }
+  .matter-content {
+    width: 200px;
+  }
+
+  .contents-box .contents-wrapper .content a.matter {
+    border-bottom: 0.5px solid;
+  }
+}
+
+/* layout breaks from 399px */
+@media only screen and (max-width: 400px) {
+  .matter-title {
+    padding-right: 10px;
+    padding-left: 0;
+  }
+  .matter-content {
+    padding-right: 0;
+  }
+
+  .contents-box {
+    height: 100vw;
+  }
+}
+
+/* layout breaks from 361px */
+@media only screen and (max-width: 360px) {
+  #profile .contents-box {
+    font-size: 3.6rem;
+  }
+}
+
+/* layout breaks from 319px, but do not care */
