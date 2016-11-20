@@ -6,12 +6,29 @@ Just my portfolio. If you are interested in even just a little bit, please visit
 ## Screenshot
 No screenshot yet. Would you like to see previous version? - See [v0.1](https://github.com/noraworld/noraworld.jp/releases/tag/v0.1)
 
+## Usage
+This project uses gulp. If you have not installed gulp on global environment yet, you should install it first.
+
+```bash
+$ npm install gulp -g
+```
+
+Execute the following commands.
+
+```bash
+$ npm install
+$ gulp
+```
+
+Then gulp tasks run and watch some files to transpile and minify etc. until pressing Ctrl-C.
+
 ## Environment
 
-* Node.js v6.7.0
+* Node.js 6.7.0
+* npm 3.10.3
 
 `server.js` requires some internal configs. Create `config.js` file under `app/` directory after cloning this repository. Then append the configs below.
 
 ```js
-exports.port = ANY_PORT_NUMBER;
+exports.port = ANY_PORT_NUMBER_YOU_LIKE;
 ```
