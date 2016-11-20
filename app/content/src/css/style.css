@@ -99,7 +99,7 @@ noscript div {
   color: rgb(128, 128, 128);
 }
 .contents-box .contents-wrapper .content a.matter {
-  border-bottom: 1px solid;
+  border-bottom: 0.5px solid;
   text-decoration: none;
 }
 .contents-box .contents-wrapper .content a.matter:hover {
@@ -208,10 +208,6 @@ noscript div {
   }
   .matter-content {
     width: 200px;
-  }
-
-  .contents-box .contents-wrapper .content a.matter {
-    border-bottom: 0.5px solid;
   }
 }
 
