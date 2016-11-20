@@ -4,7 +4,9 @@ Just my portfolio. If you are interested in even just a little bit, please visit
 [noraworld.jp](https://noraworld.jp)
 
 ## Screenshot
-No screenshot yet. Would you like to see previous version? - See [v0.1](https://github.com/noraworld/noraworld.jp/releases/tag/v0.1)
+![screenshot](https://github.com/noraworld/noraworld.jp/blob/master/screenshot.png)
+
+Would you like to see previous version? - See [v0.1](https://github.com/noraworld/noraworld.jp/releases/tag/v0.1)
 
 ## Usage
 This project uses gulp. If you have not installed gulp on global environment yet, you should install it first.
