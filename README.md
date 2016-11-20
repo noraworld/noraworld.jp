@@ -10,6 +10,7 @@ No screenshot yet. Would you like to see previous version? - See [v0.1](https://
 This project uses gulp. If you have not installed gulp on global environment yet, you should install it first.
 
 ```bash
+# if you have not installed gulp on global environment yet
 $ npm install gulp -g
 ```
 
