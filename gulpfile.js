@@ -39,4 +39,4 @@ gulp.task('watch', function() {
   gulp.watch(['./app/content/src/css/*.css', './app/content/src/js/*.js', './app/content/src/fonts/*'], ['css', 'js', 'lib', 'fonts']);
 });
 
-gulp.task('default', ['css', 'js', 'watch']);
+gulp.task('default', ['css', 'js', 'lib', 'fonts', 'watch']);
