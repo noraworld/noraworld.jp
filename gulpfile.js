@@ -15,7 +15,7 @@ gulp.task('css', function() {
 });
 
 gulp.task('js', function() {
-  gulp.src('./app/content/src/js/*')
+  gulp.src('./app/content/src/js/*.js')
       .pipe(plumber())
       .pipe(babel({
         presets: ['es2015']
@@ -25,9 +25,18 @@ gulp.task('js', function() {
       .pipe(gulp.dest('./app/content/assets/js'));
 });
 
-// TODO: cannot watch the CSS files, fix this
+gulp.task('lib', function() {
+  gulp.src('./app/content/src/js/lib/*.js')
+      .pipe(gulp.dest('./app/content/assets/js/lib'));
+});
+
+gulp.task('fonts', function() {
+  gulp.src('./app/content/src/fonts/*')
+      .pipe(gulp.dest('./app/content/assets/fonts'));
+});
+
 gulp.task('watch', function() {
-  gulp.watch(['./app/content/src/css/*.css', './app/content/src/js/*.js'], ['css', 'js']);
+  gulp.watch(['./app/content/src/css/*.css', './app/content/src/js/*.js', './app/content/src/fonts/*'], ['css', 'js', 'lib', 'fonts']);
 });
 
 gulp.task('default', ['css', 'js', 'watch']);
