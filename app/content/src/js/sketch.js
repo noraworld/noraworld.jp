@@ -6,16 +6,29 @@ if (navigator.userAgent.match(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobil
 var setup = () => {
   var canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent('canvas');
-  initializeBubbles();
+  if (!isSmartphone) {
+    initializeRings();
+  }
+  else {
+    initializeBubbles();
+  }
 }
 
 var draw = () => {
-  sketchBubbles();
+  if (!isSmartphone) {
+    sketchRings();
+  }
+  else {
+    sketchBubbles();
+  }
 }
 
 var windowResized = () => {
   if (!isSmartphone) {
     resizeCanvas(windowWidth, windowHeight);
+    resizeRings();
   }
-  resizeBubbles();
+  else {
+    resizeBubbles();
+  }
 }
