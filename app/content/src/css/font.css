@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url('../fonts/fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url('../fonts/fonts/OpenSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Josefin Slab Regular';
+  src: url('../fonts/fonts/JosefinSlab-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Josefin Slab Italic';
+  src: url('../fonts/fonts/JosefinSlab-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'Josefin Slab Light';
+  src: url('../fonts/fonts/JosefinSlab-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Josefin Slab Light Italic';
+  src: url('../fonts/fonts/JosefinSlab-LightItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Josefin Slab Thin';
+  src: url('../fonts/fonts/JosefinSlab-Thin.ttf');
+}
+
+@font-face {
+  font-family: 'Josefin Slab Thin Italic';
+  src: url('../fonts/fonts/JosefinSlab-ThinItalic.ttf');
+}

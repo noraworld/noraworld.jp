@@ -32,7 +32,7 @@ gulp.task('lib', function() {
 });
 
 gulp.task('fonts', function() {
-  gulp.src('./app/content/src/fonts/*')
+  gulp.src('./app/content/src/fonts/**')
       .pipe(gulp.dest('./app/content/assets/fonts'));
 });
 
