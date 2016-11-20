@@ -8,6 +8,7 @@ var minifycss    = require('gulp-minify-css');
 
 gulp.task('css', function() {
   gulp.src('./app/content/src/css/*.css')
+      .pipe(plumber())
       .pipe(autoprefixer())
       .pipe(concat('all.css'))
       .pipe(minifycss())
