@@ -34,11 +34,13 @@ noscript div {
   align-items: center;
 }
 .scroll-down {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
   position: absolute;
   width: 60px;
   height: 60px;
   font-size: 6rem;
-  bottom: 30px;
+  bottom: 10px;
   left: 0;
   right: 0;
   margin: auto;
