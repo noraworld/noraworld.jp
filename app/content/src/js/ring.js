@@ -1,13 +1,13 @@
 var rings = [];
 
-var initialize = () => {
+var initializeRings = () => {
   background(16, 27, 51);
   for (var i = 0; i < 100; i++) {
     rings[i] = new Ring(width/2, height/2);
   }
 }
 
-var sketch = () => {
+var sketchRings = () => {
   background(16, 27, 51);
   for (var i = 0; i < rings.length; i++) {
     rings[i].move();
@@ -16,7 +16,7 @@ var sketch = () => {
   }
 }
 
-var resize = () => {
+var resizeRings = () => {
   background(16, 27, 51);
 }
 

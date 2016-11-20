@@ -1,10 +1,10 @@
 var bubbles = [];
 
-var initialize = () => {
+var initializeBubbles = () => {
   background(221, 255, 246);
 }
 
-var sketch = () => {
+var sketchBubbles = () => {
   background(221, 255, 246);
   if (bubbles.length < 5) {
     bubbles[bubbles.length] = new Bubble(random(windowWidth), random(windowHeight), random(255));
@@ -18,7 +18,7 @@ var sketch = () => {
   }
 }
 
-var resize = () => {
+var resizeBubbles = () => {
   background(221, 255, 246);
 }
 
