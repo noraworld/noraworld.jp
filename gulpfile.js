@@ -46,7 +46,8 @@ gulp.task('watch', function() {
     [
       './app/content/src/css/*.css',
       './app/content/src/js/*.js',
-      './app/content/src/fonts/*'
+      './app/content/src/fonts/**',
+      './app/content/src/img/**'
     ],
     [
       'css',
