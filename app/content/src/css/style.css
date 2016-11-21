@@ -26,7 +26,7 @@ html {
 }
 noscript div {
   color: #ffffff;
-  font-family: 'BlinkMacSystemFont';
+  font-family: 'BlinkMacSystemFont', Segoe UI, 'Open Sans Regular', Hiragino Kaku Gothic ProN, "メイリオ", meiryo, sans-serif;
   width: 100%;
   height: 100%;
   display: flex;
@@ -122,7 +122,7 @@ noscript div {
 }
 
 #footer {
-  font-family: 'Open Sans Regular';
+  font-family: 'Open Sans Regular', 'BlinkMacSystemFont', Segoe UI, Hiragino Kaku Gothic ProN, "メイリオ", meiryo, sans-serif;
   font-size: 1rem;
   color: #3f2e2e;
   padding-top: 10px;
