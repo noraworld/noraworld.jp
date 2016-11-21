@@ -35,3 +35,5 @@ Then gulp tasks run and watch some files to transpile and minify etc. until pres
 ```js
 exports.port = ANY_PORT_NUMBER_YOU_LIKE;
 ```
+## License
+All codes of this repository are available under the MIT license. See the [LICENSE](https://github.com/noraworld/noraworld.jp/blob/master/LICENSE) for more information.
