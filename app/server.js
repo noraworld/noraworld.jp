@@ -16,7 +16,7 @@ http.createServer((request, response) => {
 
   // The front page routing
   if (filepath === 'content/') {
-    fs.readFile(filepath + '/index.html', (err, data) => {
+    fs.readFile(filepath + 'index.html', (err, data) => {
       if (err) {
         console.log(err);
         response.writeHead(500);
