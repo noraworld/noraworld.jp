@@ -19,7 +19,14 @@ gulp.task('js', function() {
   gulp.src('./app/content/src/js/*.js')
       .pipe(plumber())
       .pipe(babel({
-        presets: ['es2015']
+        presets: [['es2015', {
+          test:     /\.js$/,
+          loader:   'babel',
+          exculude: /node_modules/,
+          query: {
+            compact: false
+          }
+        }]]
       }))
       .pipe(concat('all.js'))
       .pipe(uglify())
@@ -28,7 +35,10 @@ gulp.task('js', function() {
 
 gulp.task('lib', function() {
   gulp.src('./app/content/src/js/lib/*.js')
-      .pipe(gulp.dest('./app/content/assets/js/lib'));
+      .pipe(plumber())
+      .pipe(concat('lib.js'))
+      .pipe(uglify())
+      .pipe(gulp.dest('./app/content/assets/js'));
 });
 
 gulp.task('fonts', function() {
