@@ -29,7 +29,7 @@ Then gulp tasks run and watch some files to transpile and minify etc. until pres
 ### Run a server
 You may open the new shell to run a server because gulp process is running. To run a server, execute the following commands. **NOTICE!** you need to move to just under the `app/` directory.
 
-```
+```bash
 # IMPORTANT! You need to move to app/ directory
 $ cd path/to/app
 $ node server.js
